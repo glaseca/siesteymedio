@@ -1,4 +1,4 @@
-# siesteymedio
+# Sieste y medio
 Tradicional juego de cartas
 
 Repositorio de la aplicación del juego de cartas del *Siete y medio*.
