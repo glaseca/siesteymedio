@@ -1,0 +1,101 @@
+<head>
+	<title> Siete y medio </title>
+	<link href="imagenes/favicon.png" rel="shortcut icon" type="image/x-icon">
+	<link rel="stylesheet" href="estilo/boton.css" type="text/css">
+	<link rel="stylesheet" href="estilo/textos.css" type="text/css">
+	<script src="sieteymedio.js"></script>
+</head>
+
+<body OnLoad="sieteymedio();" bgcolor="#088A08">
+	<font face="arial">
+	<center>
+		<br /><img src="imagenes/titulo.png" />
+		<form name="Juego">
+			<input class="instrucciones" target="_blank" type="button" value="Instrucciones" onClick="window.open('http://es.wikipedia.org/wiki/Siete_y_media')"/>
+			<a class="twitter" href="https://twitter.com/glaseca" target="_blank"><img src="imagenes/twitter.jpg" height="80px" width="80px"></a>
+			<!--
+			<table bgcolor="#c0c0c0" border="1" cellspacing="0" cellpadding="3">
+				<tr>
+					<td><center>Puntuación:</center></td>
+					<td><center>Banca</center></td>
+					<td><center><input type=text name="banca" size="2"></center></td>
+					<td><center>Carta:  <input type=text name="texto1" size="18" value="" readonly="readonly"></center></td>
+				</tr>
+				<tr>
+					<td><center><input type=text name="victorias" size="3" value="0" readonly="readonly"></center></td>
+					<td id="NombreJugador"><center>Jugador</center></td>
+					<td><center><input type=text name="jugador" size="2"></center></td>
+					<td><center>Carta:  <input type=text name="texto2" size="18" value="" readonly="readonly"></center></td>
+				</tr>
+				<tr>
+					<td><center><input type=button value="Empezar" onClick="nueva_mano(this.form)"></center></td>
+					<td colspan=3>
+						<center>
+							<input type=button value="Plantarse" onClick="juega_banca(this.form);busca_ganador(this.form);" />
+							<input type=button value="Una carta más" onClick="juega_jugador(this.form);" />
+						</center>
+					</td>
+				</tr>
+			</table>
+			-->
+			<table bgcolor="c0c0c0" border="1" cellspacing="0" cellpadding="0" width="665px" bordercolor="#DEA147">
+				<tr>
+					<td align="center">
+						<table  border="0" cellspacing="0" cellpadding="0" width="665px">
+							<tr>
+								<td align="center">
+									<br />
+									<input class="boton" type="button" value="Empezar" onClick="nueva_mano(this.form)" />
+									<label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Puntuaci&oacute;n&nbsp;&nbsp;&nbsp;</label>
+									<input style="background-color:#c0c0c0;text-align:center;" type="text" name="victorias" size="3" value="0" readonly="readonly" background="#c0c0c0" />
+									<hr>
+									<br/>
+								</td>
+							</tr>
+							<tr>
+								<td align="right">
+									<table  border="0" cellspacing="0" cellpadding="3" width="665px">
+										<tr>
+											<th width="30%"><label>Banca</label></th>
+											<th><input style="text-align:center;" readonly="readonly"type="text" name="banca" size="2" /></td></th>
+											<th width="70%"><label>Carta:</label>
+											<input style="text-align:center;margin-left:30px;" type="text" name="texto1" size="18" value="" readonly="readonly" /></th>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td align="right">&nbsp;</td>
+							</tr>
+							<tr>
+								<td align="right">
+									<table  border="0" cellspacing="0" cellpadding="3" width="665px">
+										<tr>
+											<th id="NombreJugador" width="30%"><label>Jugador</label></th>
+											<th><input style="text-align:center;" readonly="readonly" type="text" name="jugador" size="2" /></th>
+											<th width="70%"><label>Carta:</label>
+											<input style="text-align:center;margin-left:30px;" type="text" name="texto2" size="18" value="" readonly="readonly" /></th>
+										</tr>										
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td align="center">
+									<br />
+									<input class="boton" type="button" value="Plantarse" onClick="juega_banca(this.form);busca_ganador(this.form);" />
+									<input style="margin-left:30px;" class="boton" type="button" value="Una carta m&aacute;s" onClick="juega_jugador(this.form);" />
+								</td>
+							</tr>
+							<tr>
+								<td align="right">&nbsp;</td>
+							</tr>
+						</table>
+					</td>
+			</table>
+		</form>
+		<img src="imagenes/baraja.png" />
+		<br />
+		<label>2012 &copy; glaseca | Todos los derechos reservados.</label>
+	</center>
+	</font>	
+</body>
