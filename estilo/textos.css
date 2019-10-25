@@ -1,7 +1,9 @@
-label ,th{
-	font-family:Trebuchet MS;	
+label,
+th {
+  font-family: "Roboto", sans-serif;
 }
-h1,h2{
-	font-family:Arial;
-	padding: 10px 0 0 0;	
+h1,
+h2 {
+  font-family: Arial;
+  padding: 10px 0 0 0;
 }
